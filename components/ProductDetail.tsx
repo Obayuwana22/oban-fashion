@@ -26,17 +26,17 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product, onBack, onAddToC
           <div className="lg:col-span-7 space-y-12">
             <div className="aspect-[3/4] bg-soft-white overflow-hidden shadow-sm animate-in">
               <img 
-                src={product.imageUrl} 
+                src={product.imageUrl.src} 
                 alt={product.name} 
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="grid grid-cols-2 gap-12">
                <div className="aspect-square bg-soft-white overflow-hidden reveal active">
-                  <img src={product.imageUrl} className="w-full h-full object-cover grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-[1.5s]" alt="Detail Focus" />
+                  <img src={product.imageUrl.src} className="w-full h-full object-cover grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-[1.5s]" alt="Detail Focus" />
                </div>
                <div className="aspect-square bg-soft-white overflow-hidden reveal active" style={{ transitionDelay: '0.2s' }}>
-                  <img src={product.imageUrl} className="w-full h-full object-cover scale-[1.8] origin-center opacity-90" alt="Material Texture" />
+                  <img src={product.imageUrl.src} className="w-full h-full object-cover scale-[1.8] origin-center opacity-90" alt="Material Texture" />
                </div>
             </div>
           </div>

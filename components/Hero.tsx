@@ -22,7 +22,7 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
           // width={500}
           // height={500}
           alt="Hero Editorial" 
-          className="w-full h-full object-cover xl:w-1/2 opacity-60 "
+          className="w-full h-full object-cover xl:w-1/2 opacity-60"
         />
         <div className="absolute inset-0 bg-linear-to-b from-navy/40 via-transparent to-navy/80"></div>
       </div>
