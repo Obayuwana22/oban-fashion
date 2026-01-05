@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { CartItem } from '../types';
+import Image from 'next/image';
 
 interface CartDrawerProps {
   isOpen: boolean;
@@ -48,7 +49,7 @@ const CartDrawer: React.FC<CartDrawerProps> = ({ isOpen, onClose, items, onRemov
               items.map((item, i) => (
                 <div key={`${item.product.id}-${item.size}`} className="flex gap-8 group">
                   <div className="w-24 aspect-[3/4] bg-soft-white overflow-hidden">
-                    <img src={item.product.imageUrl} alt={item.product.name} className="w-full h-full object-cover" />
+                    <Image src={item.product.imageUrl} alt={item.product.name} className="w-full h-full object-cover" />
                   </div>
                   <div className="flex-1 flex flex-col justify-between py-2">
                     <div>

@@ -53,7 +53,7 @@ const Catalog: React.FC<CatalogProps> = ({ onProductClick }) => {
             >
               <div className="relative aspect-[3/4] overflow-hidden mb-8 bg-soft-white group">
                 <img 
-                  src={product.imageUrl} 
+                  src={product.imageUrl.src} 
                   alt={product.name} 
                   className="w-full h-full object-cover transition-all duration-[1.5s] cubic-bezier(0.16, 1, 0.3, 1) group-hover:scale-105"
                 />
