@@ -1,5 +1,3 @@
-Live Link: https://oban-fashion.vercel.app/
-
 # OBÁN — Tailored for Kings 👑
 
 Welcome to the official website of **OBÁN**, a global bespoke luxury kaftan brand crafted for men who command presence.
