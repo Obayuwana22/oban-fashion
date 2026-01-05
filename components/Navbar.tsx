@@ -46,7 +46,7 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled, onNavigate, currentView, ca
             isAltTheme ? 'text-navy' : 'text-white'
           }`}
         >
-          AURELIA
+         OBÁN
         </button>
       </div>
 

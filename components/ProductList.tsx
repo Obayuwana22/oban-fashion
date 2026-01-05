@@ -2,6 +2,7 @@
 import React from 'react';
 import { PRODUCTS } from '../constants';
 import { Product } from '../types';
+import Image from 'next/image';
 
 interface ProductListProps {
   onProductClick?: (product: Product) => void;
@@ -19,13 +20,19 @@ const ProductList: React.FC<ProductListProps> = ({ onProductClick, limit }) => {
           onClick={() => onProductClick?.(product)}
           className="group cursor-pointer reveal"
         >
-          <div className="relative aspect-[4/5] overflow-hidden mb-6 bg-[#F3F2F0]">
-            <img 
+          <div className="relative aspect-4/5 overflow-hidden mb-6 bg-[#F3F2F0]">
+            {/* <img 
+              src={product.imageUrl} 
+              alt={product.name} 
+              className="w-full h-full object-cover transition-all duration-[1.2s] ease-out group-hover:scale-105"
+            /> */}
+
+            <Image
               src={product.imageUrl} 
               alt={product.name} 
               className="w-full h-full object-cover transition-all duration-[1.2s] ease-out group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/[0.03] transition-colors duration-500"></div>
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/3 transition-colors duration-500"></div>
             
             <div className="absolute bottom-6 left-6 right-6">
                <button className="w-full bg-white/95 backdrop-blur-sm text-[#1A1A1A] py-4 text-[10px] uppercase tracking-[0.3em] font-bold transform translate-y-12 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100 shadow-xl">

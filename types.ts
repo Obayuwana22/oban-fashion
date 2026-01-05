@@ -1,10 +1,11 @@
+import { StaticImageData } from "next/image";
 
 export interface Product {
   id: string;
   name: string;
   price: number;
   category: string;
-  imageUrl: string;
+  imageUrl: StaticImageData;
   description: string;
   details: string[];
 }
@@ -19,7 +20,7 @@ export interface Collection {
   id: string;
   title: string;
   subtitle: string;
-  imageUrl: string;
+  imageUrl: StaticImageData;
   link: string;
 }
 

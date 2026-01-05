@@ -1,5 +1,7 @@
 
+import Image from 'next/image';
 import React from 'react';
+import img2 from "@/public/assets/5.png"
 
 interface HeroProps {
   onCtaClick: () => void;
@@ -9,10 +11,18 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
   return (
     <div className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-navy">
       <div className="absolute inset-0 z-0">
-        <img 
-          src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=2000&auto=format&fit=crop" 
+        {/* <Image
+          src={img2} 
           alt="Hero Editorial" 
-          className="w-full h-full object-cover scale-105 opacity-60 animate-[kenburns_30s_ease_infinite]"
+          // className="w-full h-full object-cover scale-105 opacity-60 animate-[kenburns_30s_ease_infinite]"
+        /> */}
+
+        <Image
+          src={img2} 
+          // width={500}
+          // height={500}
+          alt="Hero Editorial" 
+          className="w-full h-full object-cover xl:w-1/2 opacity-60 "
         />
         <div className="absolute inset-0 bg-linear-to-b from-navy/40 via-transparent to-navy/80"></div>
       </div>
