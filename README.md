@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# OBÁN — Tailored for Kings 👑
 
-## Getting Started
+Welcome to the official website of **OBÁN**, a global bespoke luxury kaftan brand crafted for men who command presence.
+This project represents the digital expression of regality, heritage, and refined masculine elegance.
 
-First, run the development server:
+🔗 **Live Demo:**
+[oban-fashion](https://oban-fashion.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 👑 About OBÁN
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**OBÁN** — derived from *Oba (King)* — represents authority, refinement, and timeless masculine elegance.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Founded in **2026**, OBÁN is a global bespoke luxury kaftan brand dedicated to crafting regal garments for men who embody leadership, confidence, and cultural pride. Every piece is tailored with precision, premium fabrics, and master finishing — blending **African heritage with global sophistication**.
 
-## Learn More
+OBÁN seeks to position itself as **Africa’s point of reference for bespoke regal attire**, created exclusively for modern-day kinsmen.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✨ Brand Values
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* **Regality** — Every design reflects authority and noble bearing
+* **Craftsmanship** — Precision tailoring, premium fabrics, master finishing
+* **Heritage** — Deep African roots with global luxury appeal
+* **Exclusivity** — Limited pieces and bespoke experiences
+* **Timelessness** — Designs that transcend trends
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎯 Target Audience
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* High-net-worth individuals and upwardly mobile professionals
+* Grooms and ceremonial wear clients
+* African elites and global diaspora clientele
+* Men aged **28–55** who value culture, status, and refinement
+
+---
+
+## 🧠 Brand Archetype
+
+**The King / The Ruler**
+Confident. Commanding. Cultured. Timeless.
+
+---
+
+## 👘 Fashion Offerings
+
+* Signature Luxury Kaftans
+* Statement Fashion Pieces
+* Bespoke & Limited Collections
+
+---
+
+## 🛠️ Website Tech Stack
+
+* **Frontend:** React, Next.js
+* **Styling:** Tailwind CSS
+* **Language:** TypeScript, JavaScript
+* **UI Philosophy:** Minimal, elegant, editorial luxury
+* **Deployment:** Vercel
+* **Design Tools:** Figma
+
+---
+
+## 🌍 Socials & Contact
+
+* 🌐 Website: [Coming Soon]
+* 📸 Instagram: [Coming Soon]
+* 🐦 X (Twitter): [Coming Soon]
+* 💼 LinkedIn: [Coming Soon]
+
+---
+
+## 🏛️ Vision
+
+OBÁN is more than fashion — it is **identity, power, and legacy**.
+Designed for kings. Tailored for presence.
