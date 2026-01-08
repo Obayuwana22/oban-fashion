@@ -20,13 +20,7 @@ const ProductList: React.FC<ProductListProps> = ({ onProductClick, limit }) => {
           onClick={() => onProductClick?.(product)}
           className="group cursor-pointer reveal"
         >
-          <div className="relative aspect-4/5 overflow-hidden mb-6 bg-[#F3F2F0]">
-            {/* <img 
-              src={product.imageUrl} 
-              alt={product.name} 
-              className="w-full h-full object-cover transition-all duration-[1.2s] ease-out group-hover:scale-105"
-            /> */}
-
+          <div className="relative aspect-4/5 overflow-hidden mb-6 bg-[#F3F2F0] shadow-xl">
             <Image
               src={product.imageUrl} 
               alt={product.name} 
@@ -43,7 +37,7 @@ const ProductList: React.FC<ProductListProps> = ({ onProductClick, limit }) => {
           
           <div className="px-1">
             <div className="flex justify-between items-baseline mb-2">
-              <h3 className="text-xs font-bold uppercase tracking-[0.1em] text-[#1A1A1A] group-hover:text-[#C5A059] transition-colors">
+              <h3 className="text-xs font-bold uppercase tracking-widest text-[#1A1A1A] group-hover:text-[#C5A059] transition-colors">
                 {product.name}
               </h3>
               <span className="text-xs font-light text-gray-500">

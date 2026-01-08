@@ -97,9 +97,9 @@ export default function Home() {
             <section id="collections" className="py-24 bg-soft-white">
               <Collections onNavigate={(link) => navigateTo(link as View)} />
             </section>
-            <section id="philosophy" className="py-32 bg-white">
+            {/* <section id="philosophy" className="py-32 bg-white">
               <Philosophy />
-            </section>
+            </section> */}
             <section id="shop" className="py-24 bg-soft-white">
               <div className="max-w-[1600px] mx-auto px-6 md:px-12">
                 <header className="mb-20 text-center reveal">

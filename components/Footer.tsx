@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
       <div className="max-w-[1600px] mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-24">
           <div className="lg:col-span-4">
-            <h2 className="text-4xl font-serif tracking-[0.6em] mb-10 font-light">AURELIA</h2>
+            <h2 className="text-4xl font-serif tracking-[0.6em] mb-10 font-light">OBÁN</h2>
             <p className="text-[10px] text-white/50 leading-loose uppercase tracking-[0.3em] max-w-sm">
               The pinnacle of royal craftsmanship. Dedicated to those who move with intention and command with silence.
             </p>
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
 
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-10">
           <div className="flex flex-wrap justify-center gap-10 text-[9px] uppercase tracking-[0.3em] text-white/30 font-bold">
-            <span>© 2024 AURELIA MAISON INTERNATIONALE</span>
+            <span>© 2026 AURELIA MAISON INTERNATIONALE</span>
             <a href="#" className="hover:text-white transition-colors">Privacy</a>
             <a href="#" className="hover:text-white transition-colors">Legal</a>
             <a href="#" className="hover:text-white transition-colors">Accessibility</a>

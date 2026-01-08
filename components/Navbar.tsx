@@ -1,5 +1,7 @@
 
 import React from 'react';
+import logo from "@/public/assets/Logo 1.png";
+import Image from 'next/image';
 
 interface NavbarProps {
   isScrolled: boolean;
@@ -23,13 +25,14 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled, onNavigate, currentView, ca
           onClick={() => onNavigate('home')} 
           className={`transition-colors duration-300 ${isAltTheme ? 'text-navy hover:text-royal' : 'text-white/80 hover:text-white'}`}
         >
-          Maison
+          Home
         </button>
         <button 
           onClick={() => onNavigate('catalog')} 
           className={`transition-colors duration-300 ${isAltTheme ? 'text-navy hover:text-royal' : 'text-white/80 hover:text-white'}`}
         >
-          Store
+          {/* Store */}
+          collections
         </button>
         <button 
           onClick={() => onNavigate('home')} 
@@ -47,14 +50,19 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled, onNavigate, currentView, ca
           }`}
         >
          OBÁN
+
+         <Image src={logo} alt="Logo" className="w-16 h-16" />
         </button>
       </div>
 
       <div className="flex space-x-6 md:space-x-10 text-[10px] uppercase tracking-[0.25em] font-bold items-center">
         <button className={`hidden sm:block transition-colors duration-300 ${isAltTheme ? 'text-navy hover:text-royal' : 'text-white/80 hover:text-white'}`}>
-          Search
+          Contact
         </button>
-        <button 
+        {/* <button className={`hidden sm:block transition-colors duration-300 ${isAltTheme ? 'text-navy hover:text-royal' : 'text-white/80 hover:text-white'}`}>
+          Search
+        </button> */}
+        {/* <button 
           onClick={onOpenCart}
           className={`relative transition-colors duration-300 group ${isAltTheme ? 'text-navy hover:text-royal' : 'text-white/80 hover:text-white'}`}
         >
@@ -64,8 +72,8 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled, onNavigate, currentView, ca
               {cartCount}
             </span>
           )}
-          <span className="block h-[1px] w-0 bg-current transition-all duration-300 group-hover:w-full mt-0.5"></span>
-        </button>
+          <span className="block h-px w-0 bg-current transition-all duration-300 group-hover:w-full mt-0.5"></span>
+        </button> */}
       </div>
     </nav>
   );

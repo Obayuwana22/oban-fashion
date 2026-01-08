@@ -1,7 +1,6 @@
-
-import Image from 'next/image';
-import React from 'react';
-import img2 from "@/public/assets/5.png"
+import Image from "next/image";
+import React from "react";
+import img2 from "@/public/assets/5.png";
 
 interface HeroProps {
   onCtaClick: () => void;
@@ -18,10 +17,11 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
         /> */}
 
         <Image
-          src={img2} 
+          src={img2}
+          alt="Hero Editorial"
           // width={500}
           // height={500}
-          alt="Hero Editorial" 
+          priority
           className="w-full h-full object-cover xl:w-1/2 opacity-60"
         />
         <div className="absolute inset-0 bg-linear-to-b from-navy/40 via-transparent to-navy/80"></div>
@@ -29,29 +29,37 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
 
       <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
         <span className="inline-block text-[10px] md:text-xs uppercase tracking-[0.6em] text-white/70 mb-8 font-bold reveal active">
-          The Royal Navy Collection 2024
+          Est.in 2026
         </span>
-        <h1 className="text-7xl md:text-9xl font-serif font-extralight text-white mb-10 tracking-tighter reveal active" style={{ transitionDelay: '0.2s' }}>
-          Stately <br/><span className="italic font-normal">Symmetry</span>
+        <h1
+          className="text-7xl md:text-9xl font-serif font-extralight text-white mb-10 tracking-tighter reveal active"
+          style={{ transitionDelay: "0.2s" }}
+        >
+          TAILORED <br />
+          <span className="italic font-normal">FOR KINGS</span>
         </h1>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mt-16 reveal active" style={{ transitionDelay: '0.4s' }}>
-          <button 
+        <div
+          className="flex flex-col sm:flex-row items-center justify-center gap-8 mt-16 reveal active"
+          style={{ transitionDelay: "0.4s" }}
+        >
+          <button
             onClick={onCtaClick}
-            className="group relative px-14 py-6 bg-white text-navy text-[10px] uppercase tracking-[0.4em] font-bold overflow-hidden transition-all duration-700 hover:bg-royal hover:text-white"
+            className="group relative px-14 py-6 bg-white text-navy text-[10px] uppercase tracking-[0.4em] font-bold overflow-hidden transition-all duration-700 hover:bg-royal hover:text-white cursor-pointer"
           >
-            Enter The Store
-            <div className="absolute bottom-0 left-0 w-0 h-[2px] bg-royal transition-all duration-700 group-hover:w-full"></div>
+            {/* Enter The Store */}
+            View the Collection
+            <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-royal transition-all duration-700 group-hover:w-full"></div>
           </button>
-          <button 
-            className="px-14 py-6 border border-white/20 text-white text-[10px] uppercase tracking-[0.4em] font-bold hover:bg-white/5 transition-all duration-500 backdrop-blur-md"
-          >
+          {/* <button className="px-14 py-6 border border-white/20 text-white text-[10px] uppercase tracking-[0.4em] font-bold hover:bg-white/5 transition-all duration-500 backdrop-blur-md cursor-pointer">
             The Anthology
-          </button>
+          </button> */}
         </div>
       </div>
 
       <div className="absolute bottom-16 left-1/2 -translate-x-1/2 flex flex-col items-center opacity-30">
-        <span className="text-[8px] uppercase tracking-[0.5em] text-white mb-4">Scroll to Discover</span>
+        <span className="text-[8px] uppercase tracking-[0.5em] text-white mb-4">
+          Scroll to Discover
+        </span>
         <div className="w-px h-16 bg-linear-to-b from-white to-transparent"></div>
       </div>
 
