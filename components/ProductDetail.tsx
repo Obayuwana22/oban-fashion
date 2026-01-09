@@ -53,7 +53,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product, onBack, onAddToC
               </p>
             </header>
 
-            <div className="space-y-12">
+            {/* <div className="space-y-12">
               <div>
                 <div className="flex justify-between items-baseline mb-8">
                   <h4 className="text-[10px] uppercase tracking-[0.4em] font-bold text-navy">Size Index</h4>
@@ -82,11 +82,11 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product, onBack, onAddToC
                 {selectedSize ? 'Add to Shopping Bag' : 'Select a Measurement'}
                 <span className="ml-4 opacity-0 group-hover:opacity-100 transition-all duration-500">→</span>
               </button>
-            </div>
+            </div> */}
 
             <div className="pt-16 border-t border-gray-100 grid grid-cols-1 md:grid-cols-2 gap-12">
               <div>
-                <h4 className="text-[10px] uppercase tracking-[0.4em] font-bold text-navy mb-6 underline underline-offset-8 decoration-royal">Maison Details</h4>
+                <h4 className="text-[10px] uppercase tracking-[0.4em] font-bold text-navy mb-6 underline underline-offset-8 decoration-royal">OBÁN Details</h4>
                 <ul className="space-y-4">
                   {product.details.map((detail, i) => (
                     <li key={i} className="text-[10px] text-gray-500 uppercase tracking-widest flex items-center">

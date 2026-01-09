@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
             </p>
           </div>
           
-          <div className="lg:col-span-2">
+          {/* <div className="lg:col-span-2">
             <h4 className="text-[11px] uppercase tracking-[0.4em] font-bold mb-10 text-royal">Maison</h4>
             <ul className="space-y-5 text-[10px] text-white/60 uppercase tracking-widest font-bold">
               <li><a href="#" className="hover:text-white transition-colors">Our Story</a></li>
@@ -23,9 +23,9 @@ const Footer: React.FC = () => {
               <li><a href="#" className="hover:text-white transition-colors">Sustainability</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Anthology</a></li>
             </ul>
-          </div>
+          </div> */}
 
-          <div className="lg:col-span-2">
+          {/* <div className="lg:col-span-2">
             <h4 className="text-[11px] uppercase tracking-[0.4em] font-bold mb-10 text-royal">Assistance</h4>
             <ul className="space-y-5 text-[10px] text-white/60 uppercase tracking-widest font-bold">
               <li><a href="#" className="hover:text-white transition-colors">Concierge</a></li>
@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
               <li><a href="#" className="hover:text-white transition-colors">Global Logistics</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Care Guide</a></li>
             </ul>
-          </div>
+          </div> */}
 
           <div className="lg:col-span-4">
             <h4 className="text-[11px] uppercase tracking-[0.4em] font-bold mb-10 text-royal">The Inner Circle</h4>
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
 
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-10">
           <div className="flex flex-wrap justify-center gap-10 text-[9px] uppercase tracking-[0.3em] text-white/30 font-bold">
-            <span>© 2026 AURELIA MAISON INTERNATIONALE</span>
+            <span>© 2026 OBÁN/Oba–King</span>
             <a href="#" className="hover:text-white transition-colors">Privacy</a>
             <a href="#" className="hover:text-white transition-colors">Legal</a>
             <a href="#" className="hover:text-white transition-colors">Accessibility</a>

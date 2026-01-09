@@ -1,7 +1,6 @@
-
-import React from 'react';
+import React from "react";
 import logo from "@/public/assets/Logo 1.png";
-import Image from 'next/image';
+import Image from "next/image";
 
 interface NavbarProps {
   isScrolled: boolean;
@@ -11,53 +10,89 @@ interface NavbarProps {
   onOpenCart: () => void;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ isScrolled, onNavigate, currentView, cartCount, onOpenCart }) => {
-  const isAltTheme = isScrolled || currentView !== 'home';
+const Navbar: React.FC<NavbarProps> = ({
+  isScrolled,
+  onNavigate,
+  currentView,
+  cartCount,
+  onOpenCart,
+}) => {
+  const isAltTheme = isScrolled || currentView !== "home";
 
   return (
-    <nav 
+    <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-700 px-6 md:px-12 py-6 flex justify-between items-center ${
-        isAltTheme ? 'bg-white/95 backdrop-blur-md shadow-sm py-4 border-b border-gray-100' : 'bg-transparent'
+        isAltTheme
+          ? "bg-white/95 backdrop-blur-md shadow-sm py-4 border-b border-gray-100"
+          : "bg-transparent"
       }`}
     >
       <div className="hidden md:flex space-x-10 text-[10px] uppercase tracking-[0.25em] font-bold">
-        <button 
-          onClick={() => onNavigate('home')} 
-          className={`transition-colors duration-300 ${isAltTheme ? 'text-navy hover:text-royal' : 'text-white/80 hover:text-white'}`}
+        <button
+          onClick={() => onNavigate("home")}
+          className={`transition-colors duration-300 ${
+            isAltTheme
+              ? "text-navy hover:text-royal"
+              : "text-white/80 hover:text-white"
+          }`}
         >
           Home
         </button>
-        <button 
-          onClick={() => onNavigate('catalog')} 
-          className={`transition-colors duration-300 ${isAltTheme ? 'text-navy hover:text-royal' : 'text-white/80 hover:text-white'}`}
+        <button
+          onClick={() => onNavigate("catalog")}
+          className={`transition-colors duration-300 ${
+            isAltTheme
+              ? "text-navy hover:text-royal"
+              : "text-white/80 hover:text-white"
+          }`}
         >
           {/* Store */}
           collections
         </button>
-        <button 
-          onClick={() => onNavigate('home')} 
-          className={`transition-colors duration-300 ${isAltTheme ? 'text-navy hover:text-royal' : 'text-white/80 hover:text-white'}`}
+        <button
+          onClick={() => onNavigate("home")}
+          className={`transition-colors duration-300 ${
+            isAltTheme
+              ? "text-navy hover:text-royal"
+              : "text-white/80 hover:text-white"
+          }`}
         >
           Editorial
         </button>
       </div>
 
       <div className="flex-1 flex justify-center">
-        <button 
-          onClick={() => onNavigate('home')}
+        <button
+          onClick={() => onNavigate("home")}
           className={`text-2xl md:text-3xl font-serif tracking-[0.5em] transition-all duration-700 font-light ${
-            isAltTheme ? 'text-navy' : 'text-white'
+            isAltTheme ? "text-navy" : "text-white"
           }`}
         >
-         OBÁN
-
-         <Image src={logo} alt="Logo" className="w-16 h-16" />
+          OBÁN
+          {/* <Image src={logo} alt="Logo" className="w-16 h-16" /> */}
         </button>
       </div>
 
       <div className="flex space-x-6 md:space-x-10 text-[10px] uppercase tracking-[0.25em] font-bold items-center">
-        <button className={`hidden sm:block transition-colors duration-300 ${isAltTheme ? 'text-navy hover:text-royal' : 'text-white/80 hover:text-white'}`}>
+        <button
+          onClick={() => onNavigate("home")}
+          className={`hidden sm:block transition-colors duration-300 ${
+            isAltTheme
+              ? "text-navy hover:text-royal"
+              : "text-white/80 hover:text-white"
+          }`}
+        >
           Contact
+        </button>
+        <button
+          onClick={() => onNavigate("about")}
+          className={`hidden sm:block transition-colors duration-300 ${
+            isAltTheme
+              ? "text-navy hover:text-royal"
+              : "text-white/80 hover:text-white"
+          }`}
+        >
+          About OBÁN
         </button>
         {/* <button className={`hidden sm:block transition-colors duration-300 ${isAltTheme ? 'text-navy hover:text-royal' : 'text-white/80 hover:text-white'}`}>
           Search
